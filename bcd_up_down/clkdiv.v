@@ -3,7 +3,7 @@ module clkdiv(
     input  rst,
     output reg clk_div
 );
-    localparam CONSTANT = 50000; 
+    localparam CONSTANT = 50000000; 
     reg [31:0] count;
 
     always @(posedge clk or posedge rst) begin

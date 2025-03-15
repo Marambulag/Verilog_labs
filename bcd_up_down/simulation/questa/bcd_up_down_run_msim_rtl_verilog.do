@@ -12,7 +12,7 @@ vlog -vlog01compat -work work +incdir+/home/manuel/fpga/bcd_up_down {/home/manue
 
 vlog -vlog01compat -work work +incdir+/home/manuel/fpga/bcd_up_down {/home/manuel/fpga/bcd_up_down/counter_div_tb.v}
 
-vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  counter_div
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  counter_div_tb
 
 add wave *
 view structure

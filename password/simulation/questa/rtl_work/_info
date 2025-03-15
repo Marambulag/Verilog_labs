@@ -1,0 +1,193 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 nomlopt
+!s11f vlog 2023.3 2023.07, Jul 17 2023
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/home/manuel/fpga/password/simulation/questa
+T_opt
+Z2 !s110 1741992028
+V9b920TCI^cTSmUX5cCB_90
+04 10 4 work tb_top_psw fast 0
+=1-000ae431a4f1-67d4b05c-7f981-4876
+R0
+!s12b OEM100
+!s124 OEM10U6 
+o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work +acc
+Z3 tCvgOpt 0
+n@_opt
+OL;O;2023.3;77
+vdebounce
+2/home/manuel/fpga/password/debouncer.v
+R2
+!i10b 1
+!s100 RfhOFR7V`><XfS6l9>h^_3
+IzPHRDTdO5]RZJ@TX<@T5O3
+R1
+Z4 w1741304952
+8/home/manuel/fpga/password/debouncer.v
+F/home/manuel/fpga/password/debouncer.v
+!i122 2
+L0 1 22
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+Z6 OL;L;2023.3;77
+r1
+!s85 0
+31
+Z7 !s108 1741992028.000000
+!s107 /home/manuel/fpga/password/debouncer.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/manuel/fpga/password|/home/manuel/fpga/password/debouncer.v|
+!i113 0
+Z8 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z9 !s92 -vlog01compat -work work +incdir+/home/manuel/fpga/password -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R3
+vdebouncer
+Z10 2/home/manuel/fpga/password/tb_top_psw.v
+R2
+!i10b 1
+!s100 O]84GXB8FVJC>:]TGTWX:1
+IgH=89cH52@@;[d3cJT<MW3
+R1
+Z11 w1741661028
+Z12 8/home/manuel/fpga/password/tb_top_psw.v
+Z13 F/home/manuel/fpga/password/tb_top_psw.v
+!i122 5
+L0 4 8
+R5
+R6
+r1
+!s85 0
+31
+R7
+Z14 !s107 /home/manuel/fpga/password/tb_top_psw.v|
+Z15 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/manuel/fpga/password|/home/manuel/fpga/password/tb_top_psw.v|
+!i113 0
+R8
+R9
+R3
+vdisplay
+2/home/manuel/fpga/password/display.v
+R2
+!i10b 1
+!s100 lQEzFITNoeUlMl7DDm`NE2
+IK_^9P=LNjFIO7nonnL<JV3
+R1
+w1741992020
+8/home/manuel/fpga/password/display.v
+F/home/manuel/fpga/password/display.v
+!i122 0
+L0 1 30
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/manuel/fpga/password/display.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/manuel/fpga/password|/home/manuel/fpga/password/display.v|
+!i113 0
+R8
+R9
+R3
+vedge_detector
+2/home/manuel/fpga/password/edge.v
+R2
+!i10b 1
+!s100 8Yg5Gm7@`4zo2]bXm_Z_H2
+Ilfkn@<W<>cBHc:cdH:P6P3
+R1
+w1741304899
+8/home/manuel/fpga/password/edge.v
+F/home/manuel/fpga/password/edge.v
+!i122 4
+L0 1 18
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/manuel/fpga/password/edge.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/manuel/fpga/password|/home/manuel/fpga/password/edge.v|
+!i113 0
+R8
+R9
+R3
+vfsm_controller
+2/home/manuel/fpga/password/password.v
+R2
+!i10b 1
+!s100 >D2k@J3LzY^<TGFW_`Yfc2
+IeUGROS`0VO_9PiaJlHh8F3
+R1
+R4
+8/home/manuel/fpga/password/password.v
+F/home/manuel/fpga/password/password.v
+!i122 3
+L0 1 83
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/manuel/fpga/password/password.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/manuel/fpga/password|/home/manuel/fpga/password/password.v|
+!i113 0
+R8
+R9
+R3
+vtb_top_psw
+R10
+R2
+!i10b 1
+!s100 VOhb7]^i9]>U?@`^6UPFm1
+I>C>@VZFShD`l>99C]`HT91
+R1
+R11
+R12
+R13
+!i122 5
+L0 14 78
+R5
+R6
+r1
+!s85 0
+31
+R7
+R14
+R15
+!i113 0
+R8
+R9
+R3
+vtop_psw
+2/home/manuel/fpga/password/top_psw.v
+R2
+!i10b 1
+!s100 `NXCkBVm[Y6^752Xm_eg62
+IcgUF@41IF[G9K@g>7B6:>2
+R1
+w1741575979
+8/home/manuel/fpga/password/top_psw.v
+F/home/manuel/fpga/password/top_psw.v
+!i122 1
+L0 1 42
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/manuel/fpga/password/top_psw.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/manuel/fpga/password|/home/manuel/fpga/password/top_psw.v|
+!i113 0
+R8
+R9
+R3

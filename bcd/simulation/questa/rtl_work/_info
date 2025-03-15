@@ -1,0 +1,97 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 nomlopt
+!s11f vlog 2023.3 2023.07, Jul 17 2023
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/home/manuel/fpga/bcd/simulation/questa
+T_opt
+Z2 !s110 1741993152
+VT?z?K<@WJXa;JkgA9`go50
+04 6 4 work bcd_tb fast 0
+=1-000ae431a4f1-67d4b4c0-57768-4b57
+R0
+!s12b OEM100
+!s124 OEM10U6 
+o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work +acc
+Z3 tCvgOpt 0
+n@_opt
+OL;O;2023.3;77
+vbcd
+2/home/manuel/fpga/bcd/bcdc.v
+R2
+!i10b 1
+!s100 D?La<JgHnh9C8YodV0hW]0
+IfbYijh:UDo3dWdidkhif=0
+R1
+w1740019866
+8/home/manuel/fpga/bcd/bcdc.v
+F/home/manuel/fpga/bcd/bcdc.v
+!i122 1
+L0 1 29
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OL;L;2023.3;77
+r1
+!s85 0
+31
+Z6 !s108 1741993152.000000
+!s107 /home/manuel/fpga/bcd/bcdc.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/manuel/fpga/bcd|/home/manuel/fpga/bcd/bcdc.v|
+!i113 0
+Z7 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z8 !s92 -vlog01compat -work work +incdir+/home/manuel/fpga/bcd -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R3
+vbcd_tb
+2/home/manuel/fpga/bcd/bcd_tb.v
+R2
+!i10b 1
+!s100 Qj:Qg6Yg`R3^6SmJZ[0R=0
+IO6h]VY=1IU?cbdoneiKKS3
+R1
+w1740541508
+8/home/manuel/fpga/bcd/bcd_tb.v
+F/home/manuel/fpga/bcd/bcd_tb.v
+!i122 2
+L0 2 34
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/manuel/fpga/bcd/bcd_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/manuel/fpga/bcd|/home/manuel/fpga/bcd/bcd_tb.v|
+!i113 0
+R7
+R8
+R3
+vdecoder_7seg
+2/home/manuel/fpga/bcd/bcd.v
+R2
+!i10b 1
+!s100 VNk?S2<K5_c2@<<Cc[Y[_0
+I4C1OcPPz@olkUNzPVklc23
+R1
+w1739888914
+8/home/manuel/fpga/bcd/bcd.v
+F/home/manuel/fpga/bcd/bcd.v
+!i122 0
+L0 1 22
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/manuel/fpga/bcd/bcd.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/manuel/fpga/bcd|/home/manuel/fpga/bcd/bcd.v|
+!i113 0
+R7
+R8
+R3

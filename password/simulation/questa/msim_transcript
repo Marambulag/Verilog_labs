@@ -1,0 +1,125 @@
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2023.3 linux_x86_64 Jul 17 2023
+# //
+# //  Copyright 1991-2023 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do password_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Questa Intel Starter FPGA Edition-64 vmap 2023.3 Lib Mapping Utility 2023.07 Jul 17 2023
+# vmap work rtl_work 
+# Copying /home/manuel/intelFPGA_lite/23.1std/questa_fse/linux_x86_64/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+/home/manuel/fpga/password {/home/manuel/fpga/password/display.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 16:40:28 on Mar 14,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/manuel/fpga/password" /home/manuel/fpga/password/display.v 
+# -- Compiling module display
+# 
+# Top level modules:
+# 	display
+# End time: 16:40:28 on Mar 14,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/manuel/fpga/password {/home/manuel/fpga/password/top_psw.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 16:40:28 on Mar 14,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/manuel/fpga/password" /home/manuel/fpga/password/top_psw.v 
+# -- Compiling module top_psw
+# 
+# Top level modules:
+# 	top_psw
+# End time: 16:40:28 on Mar 14,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/manuel/fpga/password {/home/manuel/fpga/password/debouncer.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 16:40:28 on Mar 14,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/manuel/fpga/password" /home/manuel/fpga/password/debouncer.v 
+# -- Compiling module debounce
+# 
+# Top level modules:
+# 	debounce
+# End time: 16:40:28 on Mar 14,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/manuel/fpga/password {/home/manuel/fpga/password/password.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 16:40:28 on Mar 14,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/manuel/fpga/password" /home/manuel/fpga/password/password.v 
+# -- Compiling module fsm_controller
+# 
+# Top level modules:
+# 	fsm_controller
+# End time: 16:40:28 on Mar 14,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/manuel/fpga/password {/home/manuel/fpga/password/edge.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 16:40:28 on Mar 14,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/manuel/fpga/password" /home/manuel/fpga/password/edge.v 
+# -- Compiling module edge_detector
+# 
+# Top level modules:
+# 	edge_detector
+# End time: 16:40:28 on Mar 14,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+/home/manuel/fpga/password {/home/manuel/fpga/password/tb_top_psw.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 16:40:28 on Mar 14,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/manuel/fpga/password" /home/manuel/fpga/password/tb_top_psw.v 
+# -- Compiling module debouncer
+# -- Compiling module tb_top_psw
+# 
+# Top level modules:
+# 	debouncer
+# 	tb_top_psw
+# End time: 16:40:28 on Mar 14,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  tb_top_psw
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" tb_top_psw 
+# Start time: 16:40:28 on Mar 14,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vopt-143) Recognized 1 FSM in module "fsm_controller(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.tb_top_psw(fast)
+# Loading work.top_psw(fast)
+# Loading work.debounce(fast)
+# Loading work.edge_detector(fast)
+# Loading work.fsm_controller(fast)
+# Loading work.display(fast)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Time=0 ns | sw=0000000000 | current_state=000 | HEX4=1111111 HEX3=1111111 HEX2=1111111 HEX1=1111111 HEX0=1111111
+# Time=25000 ns | sw=0000000100 | current_state=000 | HEX4=1111111 HEX3=1111111 HEX2=1111111 HEX1=1111111 HEX0=1111111
+# Time=35000 ns | sw=0000000000 | current_state=000 | HEX4=1111111 HEX3=1111111 HEX2=1111111 HEX1=1111111 HEX0=1111111
+# Time=45000 ns | sw=0000000001 | current_state=000 | HEX4=1111111 HEX3=1111111 HEX2=1111111 HEX1=1111111 HEX0=1111111
+# Time=55000 ns | sw=0000000000 | current_state=000 | HEX4=1111111 HEX3=1111111 HEX2=1111111 HEX1=1111111 HEX0=1111111
+# Time=65000 ns | sw=0000000010 | current_state=000 | HEX4=1111111 HEX3=1111111 HEX2=1111111 HEX1=1111111 HEX0=1111111
+# Time=75000 ns | sw=0000000000 | current_state=000 | HEX4=1111111 HEX3=1111111 HEX2=1111111 HEX1=1111111 HEX0=1111111
+# Time=85000 ns | sw=0001000000 | current_state=000 | HEX4=1111111 HEX3=1111111 HEX2=1111111 HEX1=1111111 HEX0=1111111
+# Time=95000 ns | sw=0000000000 | current_state=000 | HEX4=1111111 HEX3=1111111 HEX2=1111111 HEX1=1111111 HEX0=1111111
+# ** Note: $finish    : /home/manuel/fpga/password/tb_top_psw.v(83)
+#    Time: 135 ns  Iteration: 1  Instance: /tb_top_psw
+# 1
+# Break in Module tb_top_psw at /home/manuel/fpga/password/tb_top_psw.v line 83
+# Causality operation skipped due to absence of debug database file
+# End time: 16:47:13 on Mar 14,2025, Elapsed time: 0:06:45
+# Errors: 0, Warnings: 1

@@ -12,58 +12,107 @@
 # //  is prohibited from disclosure under the Trade Secrets Act,
 # //  18 U.S.C. Section 1905.
 # //
-# do bcd_up_down_run_msim_gate_systemverilog.do
-# if {[file exists gate_work]} {
-# 	vdel -lib gate_work -all
+# do bcd_up_down_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
 # }
-# vlib gate_work
-# vmap work gate_work
+# vlib rtl_work
+# vmap work rtl_work
 # Questa Intel Starter FPGA Edition-64 vmap 2023.3 Lib Mapping Utility 2023.07 Jul 17 2023
-# vmap work gate_work 
+# vmap work rtl_work 
 # Copying /home/manuel/intelFPGA_lite/23.1std/questa_fse/linux_x86_64/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+. {bcd_up_down.svo}
+# vlog -vlog01compat -work work +incdir+/home/manuel/fpga/bcd_up_down {/home/manuel/fpga/bcd_up_down/bcd.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 19:51:00 on Mar 13,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+." bcd_up_down.svo 
+# Start time: 17:07:13 on Mar 14,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/manuel/fpga/bcd_up_down" /home/manuel/fpga/bcd_up_down/bcd.v 
+# -- Compiling module decoder_7seg
+# 
+# Top level modules:
+# 	decoder_7seg
+# End time: 17:07:13 on Mar 14,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/manuel/fpga/bcd_up_down {/home/manuel/fpga/bcd_up_down/counter_div.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 17:07:13 on Mar 14,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/manuel/fpga/bcd_up_down" /home/manuel/fpga/bcd_up_down/counter_div.v 
 # -- Compiling module counter_div
-# -- Compiling module hard_block
 # 
 # Top level modules:
 # 	counter_div
-# End time: 19:51:00 on Mar 13,2025, Elapsed time: 0:00:00
+# End time: 17:07:13 on Mar 14,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/manuel/fpga/bcd_up_down {/home/manuel/fpga/bcd_up_down/clkdiv.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 17:07:13 on Mar 14,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/manuel/fpga/bcd_up_down" /home/manuel/fpga/bcd_up_down/clkdiv.v 
+# -- Compiling module clkdiv
+# 
+# Top level modules:
+# 	clkdiv
+# End time: 17:07:13 on Mar 14,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/manuel/fpga/bcd_up_down {/home/manuel/fpga/bcd_up_down/counter_ud.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 17:07:13 on Mar 14,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/manuel/fpga/bcd_up_down" /home/manuel/fpga/bcd_up_down/counter_ud.v 
+# -- Compiling module counter_updown
+# 
+# Top level modules:
+# 	counter_updown
+# End time: 17:07:14 on Mar 14,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+/home/manuel/fpga/bcd_up_down {/home/manuel/fpga/bcd_up_down/counter_div_tb.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 19:51:00 on Mar 13,2025
+# Start time: 17:07:14 on Mar 14,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/manuel/fpga/bcd_up_down" /home/manuel/fpga/bcd_up_down/counter_div_tb.v 
-# -- Compiling module tb_counter_div
+# -- Compiling module counter_div_tb
 # 
 # Top level modules:
-# 	tb_counter_div
-# End time: 19:51:00 on Mar 13,2025, Elapsed time: 0:00:00
+# 	counter_div_tb
+# End time: 17:07:14 on Mar 14,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L gate_work -L work -voptargs="+acc"  counter_div_tb
-# vsim -t 1ps -L altera_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L gate_work -L work -voptargs=""+acc"" counter_div_tb 
-# Start time: 19:51:00 on Mar 13,2025
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  counter_div_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" counter_div_tb 
+# Start time: 17:07:14 on Mar 14,2025
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
-# ** Error: (vopt-13130) Failed to find design unit 'counter_div_tb'.
-#         Searched libraries:
-#             altera_ver
-#             altera_lnsim_ver
-#             fiftyfivenm_ver
-#             gate_work
-#             work
-#             work
-# Optimization failed
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=1.
-# Error loading design
-# Error: Error loading design
-#        Pausing macro execution
-# MACRO ./bcd_up_down_run_msim_gate_systemverilog.do PAUSED at line 12
-# End time: 19:52:40 on Mar 13,2025, Elapsed time: 0:01:40
-# Errors: 1, Warnings: 1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.counter_div_tb(fast)
+# Loading work.counter_div(fast)
+# Loading work.clkdiv(fast)
+# Loading work.counter_updown(fast)
+# Loading work.decoder_7seg(fast)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# At time                 5000, counter:  0, decoder: 0000001
+# At time                15000, counter:  0, decoder: 0000001
+# At time                25000, counter:  0, decoder: 0000001
+# At time                35000, counter:  0, decoder: 0000001
+# At time                45000, counter:  0, decoder: 0000001
+# At time                55000, counter:  0, decoder: 0000001
+# At time                65000, counter:  0, decoder: 0000001
+# At time                75000, counter:  0, decoder: 0000001
+# At time                85000, counter:  0, decoder: 0000001
+# At time                95000, counter:  0, decoder: 0000001
+# At time               105000, counter:  0, decoder: 0000001
+# At time               115000, counter:  0, decoder: 0000001
+# At time               125000, counter:  0, decoder: 0000001
+# At time               135000, counter:  0, decoder: 0000001
+# At time               145000, counter:  0, decoder: 0000001
+# At time               155000, counter:  0, decoder: 0000001
+# At time               165000, counter:  0, decoder: 0000001
+# ** Note: $finish    : /home/manuel/fpga/bcd_up_down/counter_div_tb.v(67)
+#    Time: 170 ns  Iteration: 0  Instance: /counter_div_tb
+# 1
+# Break in Module counter_div_tb at /home/manuel/fpga/bcd_up_down/counter_div_tb.v line 67
+# End time: 17:10:58 on Mar 14,2025, Elapsed time: 0:03:44
+# Errors: 0, Warnings: 1

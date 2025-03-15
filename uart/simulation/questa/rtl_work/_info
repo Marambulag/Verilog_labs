@@ -1,0 +1,131 @@
+m255
+K4
+z2
+!s11f vlog 2023.3 2023.07, Jul 17 2023
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/manuel/fpga/uart/simulation/questa
+vdebounce
+2/home/manuel/fpga/uart/debounce.v
+Z1 !s110 1742004071
+!i10b 1
+!s100 TSho0DmF@d<J?da[?zkJb3
+In`T484oNdb@[DgDeW8nfX3
+R0
+Z2 w1741700418
+8/home/manuel/fpga/uart/debounce.v
+F/home/manuel/fpga/uart/debounce.v
+!i122 3
+L0 1 29
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 OL;L;2023.3;77
+r1
+!s85 0
+31
+Z5 !s108 1742004071.000000
+!s107 /home/manuel/fpga/uart/debounce.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/manuel/fpga/uart|/home/manuel/fpga/uart/debounce.v|
+!i113 0
+Z6 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z7 !s92 -vlog01compat -work work +incdir+/home/manuel/fpga/uart -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z8 tCvgOpt 0
+vreceiver
+2/home/manuel/fpga/uart/rx.v
+R1
+!i10b 1
+!s100 XFkX6_2=MQIWA`Zk:MoKD2
+ImcKlmSW^mhP^<X]c_>8Gf2
+R0
+w1741700396
+8/home/manuel/fpga/uart/rx.v
+F/home/manuel/fpga/uart/rx.v
+!i122 0
+L0 1 107
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/manuel/fpga/uart/rx.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/manuel/fpga/uart|/home/manuel/fpga/uart/rx.v|
+!i113 0
+R6
+R7
+R8
+vtop_loopback
+2/home/manuel/fpga/uart/top_loopback.v
+R1
+!i10b 1
+!s100 4413j>WjjLh29S6Tc8aeO2
+I]^58U`Uh3QhM9mh><9YBS2
+R0
+R2
+8/home/manuel/fpga/uart/top_loopback.v
+F/home/manuel/fpga/uart/top_loopback.v
+!i122 2
+L0 1 39
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/manuel/fpga/uart/top_loopback.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/manuel/fpga/uart|/home/manuel/fpga/uart/top_loopback.v|
+!i113 0
+R6
+R7
+R8
+vtop_loopback_tb
+2/home/manuel/fpga/uart/rxtx_tb.v
+R1
+!i10b 1
+!s100 eR2Y]Fjh7cA=12Zl^RNjV0
+Icf885TjTUN]>I3m9=b<Y11
+R0
+w1742004031
+8/home/manuel/fpga/uart/rxtx_tb.v
+F/home/manuel/fpga/uart/rxtx_tb.v
+!i122 4
+L0 3 67
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/manuel/fpga/uart/rxtx_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/manuel/fpga/uart|/home/manuel/fpga/uart/rxtx_tb.v|
+!i113 0
+R6
+R7
+R8
+vtx
+2/home/manuel/fpga/uart/tx.v
+R1
+!i10b 1
+!s100 ONaN_9kYHXTMDk^nQR7Gm2
+IJdc=]3HOk_[L>NHl@ez6Z2
+R0
+w1741700417
+8/home/manuel/fpga/uart/tx.v
+F/home/manuel/fpga/uart/tx.v
+!i122 1
+L0 1 90
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/manuel/fpga/uart/tx.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/manuel/fpga/uart|/home/manuel/fpga/uart/tx.v|
+!i113 0
+R6
+R7
+R8

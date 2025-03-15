@@ -1,0 +1,401 @@
+$date
+	Fri Mar 14 16:40:29 2025
+$end
+$version
+	Questa Intel Starter FPGA Edition Version 2023.3
+$end
+$timescale
+	1ps
+$end
+
+$scope module tb_top_psw $end
+$var reg 1 ! clk $end
+$var reg 1 " rst_n $end
+$var reg 10 # sw [9:0] $end
+$var wire 1 $ HEX4 [6] $end
+$var wire 1 % HEX4 [5] $end
+$var wire 1 & HEX4 [4] $end
+$var wire 1 ' HEX4 [3] $end
+$var wire 1 ( HEX4 [2] $end
+$var wire 1 ) HEX4 [1] $end
+$var wire 1 * HEX4 [0] $end
+$var wire 1 + HEX3 [6] $end
+$var wire 1 , HEX3 [5] $end
+$var wire 1 - HEX3 [4] $end
+$var wire 1 . HEX3 [3] $end
+$var wire 1 / HEX3 [2] $end
+$var wire 1 0 HEX3 [1] $end
+$var wire 1 1 HEX3 [0] $end
+$var wire 1 2 HEX2 [6] $end
+$var wire 1 3 HEX2 [5] $end
+$var wire 1 4 HEX2 [4] $end
+$var wire 1 5 HEX2 [3] $end
+$var wire 1 6 HEX2 [2] $end
+$var wire 1 7 HEX2 [1] $end
+$var wire 1 8 HEX2 [0] $end
+$var wire 1 9 HEX1 [6] $end
+$var wire 1 : HEX1 [5] $end
+$var wire 1 ; HEX1 [4] $end
+$var wire 1 < HEX1 [3] $end
+$var wire 1 = HEX1 [2] $end
+$var wire 1 > HEX1 [1] $end
+$var wire 1 ? HEX1 [0] $end
+$var wire 1 @ HEX0 [6] $end
+$var wire 1 A HEX0 [5] $end
+$var wire 1 B HEX0 [4] $end
+$var wire 1 C HEX0 [3] $end
+$var wire 1 D HEX0 [2] $end
+$var wire 1 E HEX0 [1] $end
+$var wire 1 F HEX0 [0] $end
+$var wire 1 G current_state [2] $end
+$var wire 1 H current_state [1] $end
+$var wire 1 I current_state [0] $end
+
+$scope module uut $end
+$var wire 1 J sw [9] $end
+$var wire 1 K sw [8] $end
+$var wire 1 L sw [7] $end
+$var wire 1 M sw [6] $end
+$var wire 1 N sw [5] $end
+$var wire 1 O sw [4] $end
+$var wire 1 P sw [3] $end
+$var wire 1 Q sw [2] $end
+$var wire 1 R sw [1] $end
+$var wire 1 S sw [0] $end
+$var wire 1 T clk $end
+$var wire 1 U rst_n $end
+$var wire 1 $ HEX4 [6] $end
+$var wire 1 % HEX4 [5] $end
+$var wire 1 & HEX4 [4] $end
+$var wire 1 ' HEX4 [3] $end
+$var wire 1 ( HEX4 [2] $end
+$var wire 1 ) HEX4 [1] $end
+$var wire 1 * HEX4 [0] $end
+$var wire 1 + HEX3 [6] $end
+$var wire 1 , HEX3 [5] $end
+$var wire 1 - HEX3 [4] $end
+$var wire 1 . HEX3 [3] $end
+$var wire 1 / HEX3 [2] $end
+$var wire 1 0 HEX3 [1] $end
+$var wire 1 1 HEX3 [0] $end
+$var wire 1 2 HEX2 [6] $end
+$var wire 1 3 HEX2 [5] $end
+$var wire 1 4 HEX2 [4] $end
+$var wire 1 5 HEX2 [3] $end
+$var wire 1 6 HEX2 [2] $end
+$var wire 1 7 HEX2 [1] $end
+$var wire 1 8 HEX2 [0] $end
+$var wire 1 9 HEX1 [6] $end
+$var wire 1 : HEX1 [5] $end
+$var wire 1 ; HEX1 [4] $end
+$var wire 1 < HEX1 [3] $end
+$var wire 1 = HEX1 [2] $end
+$var wire 1 > HEX1 [1] $end
+$var wire 1 ? HEX1 [0] $end
+$var wire 1 @ HEX0 [6] $end
+$var wire 1 A HEX0 [5] $end
+$var wire 1 B HEX0 [4] $end
+$var wire 1 C HEX0 [3] $end
+$var wire 1 D HEX0 [2] $end
+$var wire 1 E HEX0 [1] $end
+$var wire 1 F HEX0 [0] $end
+$var wire 1 V sw_clean [9] $end
+$var wire 1 W sw_clean [8] $end
+$var wire 1 X sw_clean [7] $end
+$var wire 1 Y sw_clean [6] $end
+$var wire 1 Z sw_clean [5] $end
+$var wire 1 [ sw_clean [4] $end
+$var wire 1 \ sw_clean [3] $end
+$var wire 1 ] sw_clean [2] $end
+$var wire 1 ^ sw_clean [1] $end
+$var wire 1 _ sw_clean [0] $end
+$var wire 1 ` sw_rise [9] $end
+$var wire 1 a sw_rise [8] $end
+$var wire 1 b sw_rise [7] $end
+$var wire 1 c sw_rise [6] $end
+$var wire 1 d sw_rise [5] $end
+$var wire 1 e sw_rise [4] $end
+$var wire 1 f sw_rise [3] $end
+$var wire 1 g sw_rise [2] $end
+$var wire 1 h sw_rise [1] $end
+$var wire 1 i sw_rise [0] $end
+$var wire 1 j current_state [2] $end
+$var wire 1 k current_state [1] $end
+$var wire 1 l current_state [0] $end
+
+$scope module debounce_inst $end
+$var wire 1 T clk $end
+$var wire 1 U rst_n $end
+$var wire 1 J sw [9] $end
+$var wire 1 K sw [8] $end
+$var wire 1 L sw [7] $end
+$var wire 1 M sw [6] $end
+$var wire 1 N sw [5] $end
+$var wire 1 O sw [4] $end
+$var wire 1 P sw [3] $end
+$var wire 1 Q sw [2] $end
+$var wire 1 R sw [1] $end
+$var wire 1 S sw [0] $end
+$var reg 10 m sw_clean [9:0] $end
+$var reg 20 n counter [19:0] $end
+$upscope $end
+
+$scope module edge_inst $end
+$var wire 1 T clk $end
+$var wire 1 U rst_n $end
+$var wire 1 V sw_clean [9] $end
+$var wire 1 W sw_clean [8] $end
+$var wire 1 X sw_clean [7] $end
+$var wire 1 Y sw_clean [6] $end
+$var wire 1 Z sw_clean [5] $end
+$var wire 1 [ sw_clean [4] $end
+$var wire 1 \ sw_clean [3] $end
+$var wire 1 ] sw_clean [2] $end
+$var wire 1 ^ sw_clean [1] $end
+$var wire 1 _ sw_clean [0] $end
+$var reg 10 o sw_rise [9:0] $end
+$var reg 10 p sw_prev [9:0] $end
+$upscope $end
+
+$scope module fsm_inst $end
+$var parameter 3 q IDLE $end
+$var parameter 3 r SW2 $end
+$var parameter 3 s SW0 $end
+$var parameter 3 t SW1 $end
+$var parameter 3 u SW6 $end
+$var parameter 3 v ERROR $end
+$var parameter 3 w COMPLETE $end
+$var wire 1 T clk $end
+$var wire 1 U rst_n $end
+$var wire 1 ` sw_rise [9] $end
+$var wire 1 a sw_rise [8] $end
+$var wire 1 b sw_rise [7] $end
+$var wire 1 c sw_rise [6] $end
+$var wire 1 d sw_rise [5] $end
+$var wire 1 e sw_rise [4] $end
+$var wire 1 f sw_rise [3] $end
+$var wire 1 g sw_rise [2] $end
+$var wire 1 h sw_rise [1] $end
+$var wire 1 i sw_rise [0] $end
+$var reg 3 x state [2:0] $end
+$upscope $end
+
+$scope module display_inst $end
+$var wire 1 j state [2] $end
+$var wire 1 k state [1] $end
+$var wire 1 l state [0] $end
+$var reg 7 y HEX4 [6:0] $end
+$var reg 7 z HEX3 [6:0] $end
+$var reg 7 { HEX2 [6:0] $end
+$var reg 7 | HEX1 [6:0] $end
+$var reg 7 } HEX0 [6:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+b0 #
+b0 m
+b0 n
+b0 o
+b0 p
+b0 x
+b1111111 y
+b1111111 z
+b1111111 {
+b1111111 |
+b1111111 }
+b0 q
+b1 r
+b10 s
+b11 t
+b100 u
+b101 v
+b110 w
+1*
+1)
+1(
+1'
+1&
+1%
+1$
+11
+10
+1/
+1.
+1-
+1,
+1+
+18
+17
+16
+15
+14
+13
+12
+1?
+1>
+1=
+1<
+1;
+1:
+19
+1F
+1E
+1D
+1C
+1B
+1A
+1@
+0_
+0^
+0]
+0\
+0[
+0Z
+0Y
+0X
+0W
+0V
+0i
+0h
+0g
+0f
+0e
+0d
+0c
+0b
+0a
+0`
+0l
+0k
+0j
+0I
+0H
+0G
+0U
+0T
+0S
+0R
+0Q
+0P
+0O
+0N
+0M
+0L
+0K
+0J
+$end
+#5000
+1!
+1T
+#10000
+0!
+0T
+#15000
+1!
+1T
+1"
+1U
+#20000
+0!
+0T
+#25000
+1!
+1T
+b100 #
+1Q
+b1 n
+#30000
+0!
+0T
+#35000
+1!
+1T
+b0 #
+0Q
+b10 n
+#40000
+0!
+0T
+#45000
+1!
+1T
+b1 #
+1S
+b11 n
+#50000
+0!
+0T
+#55000
+1!
+1T
+b0 #
+0S
+b100 n
+#60000
+0!
+0T
+#65000
+1!
+1T
+b10 #
+1R
+b101 n
+#70000
+0!
+0T
+#75000
+1!
+1T
+b0 #
+0R
+b110 n
+#80000
+0!
+0T
+#85000
+1!
+1T
+b1000000 #
+1M
+b111 n
+#90000
+0!
+0T
+#95000
+1!
+1T
+b0 #
+0M
+b1000 n
+#100000
+0!
+0T
+#105000
+1!
+1T
+b1001 n
+#110000
+0!
+0T
+#115000
+1!
+1T
+b1010 n
+#120000
+0!
+0T
+#125000
+1!
+1T
+b1011 n
+#130000
+0!
+0T
+#135000
+1!
+1T
