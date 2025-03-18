@@ -13,8 +13,6 @@ Cable de programación JTAG
 
 📂 Estructura del Proyecto
 
-/gates_project
-
 │── top_loopback.v # Módulo principal con compuertas lógicas
 
 │── rxtx_tb.v # Testbench para simulación
