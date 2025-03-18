@@ -14,8 +14,6 @@ Cable de programación JTAG
 
 📂 Estructura del Proyecto
 
-/gates_project
-
 │── bcd.v # Módulo principal con compuertas lógicas
 
 │── bcd_tb.v # Testbench para simulación
