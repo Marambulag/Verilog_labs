@@ -1,4 +1,4 @@
-Prueba de Compuertas Lógicas en FPGA con Quartus y Verilog
+Prueba de display en FPGA con Quartus y Verilog
 
 📌 Descripción
 
