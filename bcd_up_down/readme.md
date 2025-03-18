@@ -13,8 +13,6 @@ Cable de programación JTAG
 
 📂 Estructura del Proyecto
 
-/gates_project
-
 │── counter_div.v # Módulo principal con compuertas lógicas
 
 │── counter_div_tb.v # Testbench para simulación
