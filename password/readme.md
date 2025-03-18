@@ -13,8 +13,6 @@ Cable de programación JTAG
 
 📂 Estructura del Proyecto
 
-/gates_project
-
 │── top_psw.v # Módulo principal con compuertas lógicas
 
 │── tb_top_psw.v # Testbench para simulación
