@@ -13,8 +13,6 @@ Cable de programación JTAG
 
 📂 Estructura del Proyecto
 
-/gates_project
-
 │── pwm.v # Módulo principal con compuertas lógicas
 
 │── pwm_tb1.v # Testbench para simulación
