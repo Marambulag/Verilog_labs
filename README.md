@@ -1,2 +1,2 @@
 # Verilog_labs
-Verilog scripts made for FPGA programming.
+Verilog scripts made for FPGA programming class.
